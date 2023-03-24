@@ -34,3 +34,5 @@
 - Zwei Minuten später kostet die folgende Transaktion mit genau denselben Daten und Aufrufen: 
 - ![image](https://user-images.githubusercontent.com/73344372/227542160-10571052-30f3-4ec0-9a76-1aebb52b4480.png)
 - Aus diesem Grund ist aus Effizienzgründen ein komplettes Frontend nicht möglich aufzubauen (dafür kann gerne das Flutter-Projekt angeschaut werden), da ein Test sowieso nicht möglich ist außer man ist Goerli-Reich
+- Aus Dokumentationszwecken noch die Hexadezimaldaten, die man an den Smart-Contract für mehr als 4 ETH senden würde:
+- ![image](https://user-images.githubusercontent.com/73344372/227543212-cd7cea24-b996-4a6d-b250-b64be521002f.png)
