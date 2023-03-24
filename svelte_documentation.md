@@ -27,3 +27,8 @@
 		from: userAddress
 	});```
 - Mithilfe von Buttons werden die Funktionen aufgerufen und der Nutzer muss die Transaktion mittels des Providers bestätigen (zum Beispiel Metamask)
+
+## Probleme
+- Das Testnetzwerk Goerli scheint stellenweise so stark ausgelastet zu sein, dass die Gebühr beispielsweise nur 0,07125 ETH betragen soll und maximal bis zu knapp 13,37 ETH: ![image](https://user-images.githubusercontent.com/73344372/227541541-a44183be-36c7-4389-bd18-d7c950ae5f91.png)
+- Zwei Minuten später kostet die folgende Transaktion mit genau denselben Daten und Aufrufen: ![image](https://user-images.githubusercontent.com/73344372/227542160-10571052-30f3-4ec0-9a76-1aebb52b4480.png)
+- Aus diesem Grund ist aus Effizienzgründen ein komplettes Frontend nicht möglich aufzubauen (dafür kann gerne das Flutter-Projekt angeschaut werden), da ein Test sowieso nicht möglich ist außer man ist Goerli-Reich
