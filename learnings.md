@@ -1,4 +1,4 @@
-# Learnings
+# Solidity Learnings
 
 ---
 
