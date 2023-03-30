@@ -1,3 +1,44 @@
+# Smart Contract ChatApp
+
+## Contract Deployment
+
+### Verwendete Tools/Websites:
+- [Remix Web-IDE](https://remix.ethereum.org/)
+- [Chainlist.org](https://chainlist.org/)
+- [Etherscan](https://etherscan.io/)
+- [Alchemy](https://goerlifaucet.com/)
+- [MetaMask](https://metamask.io/)
+
+### Deployment Ablauf:
+- Contract wurde in Remix übertragen
+	- Compilen des Contracts
+	- Lokales Deployment auf Remix VM
+	- Alle Funktionen wurden für die Maincases getestet <br> &rarr; Alle Methoden waren erfolgreich
+- Auswahl einer Testchain
+	- Auswahl einer Ethereum Testchain über [Chainlist.org](https://chainlist.org/) <br> &rarr; Ausgewählte Chain: [Görli ChainID 5](https://chainlist.org/chain/5)
+	- Anschließend wurde Görli ETH über [Alchemy](https://goerlifaucet.com/) beschafft
+	- Wechsel in MetaMask auf die Görli Testchain
+- Deployment auf der Görli Testchain über Remix
+	- Contract ggf. neu compilen
+	- In Deployment & run transactions das Environment _Injected Provider - MetaMask_ <br> &rarr; Sollte jetzt _Goerli (5) network_ anzeigen
+	- Anschließend auf der Testchain Deployed <br> &rarr; [Etherscan entry](https://goerli.etherscan.io/tx/0xf20e541f2f38ae85db00903baefd1ea012f95564d4347e52b902e605a41b63c6)
+- Testen des Deployments über Remix
+	- Transaction Hash aus Etherscan (0xf20e541f2f38ae85db00903baefd1ea012f95564d4347e52b902e605a41b63c6) kann bei Remix eingesetzt werden
+	- Dafür den exakt gleichen Kontakt in Remix compilen
+	- Anschließend in das At Address-Feld den Hash eingeben
+	- Durch Klicken auf _At Address_ kann der Contract überprüft werden
+
+---
+
+## Contract Testing
+
+- Lokales Testen in Remix
+- Test über Svelt UI Oberfläche 
+
+---
+
+## Contract Methods
+
 ### acceptContactRequest
 		"inputs": [
 			{
