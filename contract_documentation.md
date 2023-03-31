@@ -1,5 +1,9 @@
 # Smart Contract ChatApp
 
+[Unser ChatApp Contract](https://github.com/App-Entwicklung/backend/blob/main/contracts/ChatApp.sol)
+
+[Etherscan Contract Deployment](https://goerli.etherscan.io/tx/0xf20e541f2f38ae85db00903baefd1ea012f95564d4347e52b902e605a41b63c6)
+
 ## Contract Deployment
 
 ### Verwendete Tools/Websites:
@@ -15,7 +19,7 @@
 	- Lokales Deployment auf Remix VM
 	- Alle Funktionen wurden für die Maincases getestet <br> &rarr; Alle Methoden waren erfolgreich
 - Auswahl einer Testchain
-	- Auswahl einer Ethereum Testchain über [Chainlist.org](https://chainlist.org/) <br> &rarr; Ausgewählte Chain: [Görli ChainID 5](https://chainlist.org/chain/5)
+	- Auswahl einer Ethereum Testchain über [Chainlist.org](https://chainlist.org/) <br> &rarr; Ausgewählte Chain: [Goerli ChainID 5](https://chainlist.org/chain/5)
 	- Anschließend wurde Görli ETH über [Alchemy](https://goerlifaucet.com/) beschafft
 	- Wechsel in MetaMask auf die Görli Testchain
 - Deployment auf der Görli Testchain über Remix
@@ -27,6 +31,21 @@
 	- Dafür den exakt gleichen Kontakt in Remix compilen
 	- Anschließend in das At Address-Feld den Hash eingeben
 	- Durch Klicken auf _At Address_ kann der Contract überprüft werden
+
+### Deployment auf Arbitrum
+- Anpassung der Contract Lizenz (Unlicensed &rarr; GNU GPL V3)
+- Neues compilen des Contracts auf Remix
+- Verbinden von MetaMask zur Arbitrum One Chain
+als Environment _Injected Provider - MetaMask_ auswählen
+- Errors beim Deployment:
+	- __Error:__ Not enough ETH
+	- __Fix:__ Accounts, die nicht verwendet werden sollen, müssen von der Seite disconnected werden
+	- __Error:__ creation of ChatApp errored: Returned error: {"jsonrpc":"2.0","error":"[ethjs-query] while formatting outputs from RPC '{\"value\":{\"code\":-32603,\"data\":{\"message\":\"Internal Server Error\"}}}'","id":6295019923612418} 
+	- __Fix-Verlauf:__  
+		- Ändern der Umgebung von Chrome zu Brave
+		- Neue Meldung: creation of ChatApp errored: Invalid JSON RPC response: {"jsonrpc":"2.0","id":4979329890984500}
+	- __Fix:__ WIP
+
 
 ---
 
