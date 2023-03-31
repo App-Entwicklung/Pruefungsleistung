@@ -32,6 +32,19 @@
 - ```requestAccount()``` - Methode auf, um die Ethereum-Adresse des Benutzers abzurufen
 - ```getChainId()``` - Methode, um die ID der aktuellen Chain abzurufen
 
+## Smart Contract in Flutter
+### web3dart package
+- Eine Implementierung der Ethereum JSON-RPC-Schnittstelle für Dart
+- Ermöglicht die Interaktion mit Ethereum-Netzwerken und Smart Contracts
+- Installieren mit ```flutter pub add web3dart```
+- Importieren mit ```import 'package:web3dart/web3dart.dart'```
+- Link: https://pub.dev/packages/web3dart
+
+### Methoden
+- Über die Funktion ```initEthClient``` wird der Web3-Client initalisiert
+- Über die Funktion ```getContract``` wird der deployed Contract zurückgegeben, welches die Adresse und das ABI des Smart Contracts enthält
+- Über die Funktionen ```readFromBlockchain``` und ```writeToBlockchain``` werden die Lese- und Schreibeoperationen des Smart Contracts durchgeführt
+
 ## Probleme
 - SendTransaction wirft dauerhaft den Fehler -32000 mit msg "insufficient funds" oder ähnliches (trotz genügend funds)
   - Paralelle Erstellung von Svelte-Frontends zum Ausprobieren von anderen Libraries und Frameworks
