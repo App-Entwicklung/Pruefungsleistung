@@ -19,7 +19,7 @@
 - Einfache Seperation of Concerns &rarr; Widget-Based
 ---
 
-## Entscheidung für Solidity
+## Entscheidung für Solidity / Blockchain-Technologie
 
 ### Persönliche Gründe
 
