@@ -35,7 +35,7 @@
 - String vergleich durch hash-functions wie z. B. keccak256(str)
 
 ```java
-  bool equals = keccak256(str1) == keccak256(str2); // funktioniert nicht
+  bool equals = keccak256(str1) == keccak256(str2); // funktioniert
 ```
 
 ### Speichern in smart-contracts:
